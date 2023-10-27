@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Install dependencies and build React app
-                sh 'apt-get install npm'
+                sh 'sudo apt-get install npm'
                 sh 'npm install'
                 sh 'npm run build'
             }
